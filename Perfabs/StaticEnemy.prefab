@@ -137,4 +137,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  EnemyDeathEffect: {fileID: 1364278518757853346, guid: c577ee20a3364c09f9275a35eeabb1b4, type: 3}
   rb: {fileID: 0}
