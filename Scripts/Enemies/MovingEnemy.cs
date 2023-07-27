@@ -1,6 +1,8 @@
 using UnityEngine;
 
 public class MovingEnemy : Enemy {
+    public float speed = 2.1f;
+
     public Transform[] movePoints;
     private int CIndex = 0;
 
@@ -13,6 +15,6 @@ public class MovingEnemy : Enemy {
             }
         }
 
-        transform.position = Vector2.MoveTowards(transform.position, movePoints[CIndex].position, Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, movePoints[CIndex].position, Time.deltaTime * speed);
     }
 }
