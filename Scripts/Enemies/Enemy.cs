@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour {
         health -= damage;
 
         if (health >= 0) {
-            Instantiate(EnemyDeathEffect);
+            Instantiate(EnemyDeathEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
