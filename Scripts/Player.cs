@@ -31,4 +31,8 @@ public class Player : MonoBehaviour {
             hasShot = true;
         }
     }
+
+    public void ResetCanShoot() {
+        hasShot = false;
+    }
 }
