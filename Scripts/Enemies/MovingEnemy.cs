@@ -9,7 +9,7 @@ public class MovingEnemy : Enemy {
     private void Update() {
         if (Vector2.Distance(rb.position, movePoints[CIndex].position) < .05f) {
             if (CIndex == 0) {
-                CIndex = 1;;
+                CIndex = 1;
             } else {
                 CIndex = 0;
             }
